@@ -1,0 +1,345 @@
+ 
+/* Polices*/
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('Roboto-Regular-webfont.woff2') format('woff2'), url('Roboto-Regular-webfont.woff') format('woff'), url('Roboto-Regular-webfont.ttf') format('truetype'), url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+body > * {
+    font-family: fonts/robotoregular;
+    text-align: justify;
+    
+}
+#main {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+        /* Colors */
+#left-box, .icon-left-box, #right-box{
+    color: #142B45;
+}
+h3, #first-name, .picto, .double-point, .point, .left-article {
+    color: #ed3a88;
+}
+.photo, .contact, .a_propos, .loisirs, #job:after {
+    background-color: #ed3a88;     
+}
+.photo {
+    background-color: white;
+}
+h3 {
+    background-color: #142B45;
+}
+a {
+    text-decoration: none;
+    color: #142B45;
+}
+
+/* Fonts & Text */
+.date, .lieu, h4, #left-box, #right-box, .picto {
+    font-size: 14px;
+}
+.fa-book, .fa-pagelines, h1 {
+    font-size: 30px;
+}
+h3, h2 {
+    font-size: 22px;
+}
+h2, h1, .date, .lieu, h4 {
+    font-family: acumin-pro, sans-serif;
+}
+h1, h3, h2, h4 {
+    text-transform: uppercase;
+}
+#first-name {
+    font-weight: bold;
+}
+h2, h3, .title {
+    text-align: center;
+}
+
+        /*flexbox*/
+.left-article, aside, block, #header, #main, .photo, #icon {
+    display: flex;
+}
+aside, #icon {
+    justify-content: space-around;
+}
+.block, #header {
+    flex-direction: column;
+}
+
+        /*borders*/
+.title {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+h1, h3, aside, h4 {
+    margin-bottom: 0px;
+}
+h2 {
+    border-bottom: 2px #ed3a88 solid;
+}
+h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+aside, h4 {
+    margin-top: 0px;
+}
+.point, .double-point, .lieu, .right-article, .p-contact, .p-a_propos {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.block {
+    margin-top: 25px;
+}
+.p-contact, .p-a_propos, #icon {
+    padding-top: 20px;
+}
+
+        /*Head*/
+#header, #main {
+    width: 100%;
+}
+.photo {
+    flex: 1 1 auto;
+    padding-top: 15px;
+ 
+    justify-content: center;
+    align-items: center;
+}
+.ngm {
+    width: 133px;
+    height: 133px;
+    border: none;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #142B45;
+}
+
+        /*icon loisirs*/
+.icon-left-box {
+    border: 2px solid #142B45;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.fa-book {
+    padding: 10px 13px 10px 13px;
+}
+.fa-pagelines {
+    padding: 10px 14px 10px 14px;
+}
+.fa-plane {
+    font-size: 25px;
+    padding: 12px 11px 12px 11px;
+}
+.fa-film {
+    font-size: 28px;
+    padding: 10px 11px 10px 11px;
+}
+#icon {
+    padding-bottom: 20px;
+}
+
+        /*titles*/
+#job {
+    position: relative;
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+    #job:after {
+        content: "";
+        height: 2px;
+        width: 55px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0%;
+    }
+
+        /*pictos titles*/
+.picto {
+    padding-top: 0px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.point {   
+    margin-right: 10px;
+    margin-top: 8px;
+    font-size: 9px;
+}
+.double-point {
+    margin-right: 10px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE TABLETTE */
+@media (min-width: 455px) and (max-width: 870px) {
+    .block, .p-left-article, .p-left-article {
+        display: flex;
+    }
+    .block {        
+        flex-direction: initial;
+    }
+    .p-left-article, .p-left-article {
+        flex-direction: column;
+    }
+    .left-article {
+        width: 30%;
+    }
+    .right-article {      
+        width: 70%;      
+    }
+    h4 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h3, h2 {
+        font-size: 20px;
+    }
+    .lieu {
+        padding-left: 0px;    
+    }
+  
+}
+
+
+ /* DESKTOP */
+@media(min-width: 871px)  {
+    body >*{
+        max-width: 1900px;
+    }
+            /*flexbox & mise en page*/
+    #main, .block, #left-box, .p-left-article {
+        display: flex;
+    }
+    .p-left-article, #left-box {
+        flex-direction: column;
+    }
+    #main, #header, .block {
+        flex-direction: initial;
+    }
+    #right-box {       
+        display: block;       
+    }
+    .contact {
+        flex: 2 1 auto;
+    }
+    .a_propos {
+        flex: 3 1 auto;
+    }
+    .loisirs {
+        flex: 0.4 1 auto;
+    }
+    #right-box {
+        float: right;
+    }
+    .picto, #left-box {
+        float: left;
+    }
+
+            /*borders & width*/
+    .photo, #left-box {
+        width: 25%;
+    }
+    .title, #right-box {
+        width: 75%;
+    }
+    .left-article {
+        width: 30%;
+    }
+    .aside-left {
+        width: 40%;
+    }
+    .aside-right {
+        width: 60%;
+    }
+    .right-article {
+        width: 70%;
+    }
+    .title {
+        padding-left: 55px;
+        padding-bottom: 55px;
+    }
+    #left-box {
+        margin-right: 55px;        
+    }
+    .p-contact, .p-a_propos {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .picto {
+        margin-left: 10px;
+    }
+    h2, .right-article {
+        margin-right: 30px;
+    }
+    .double-point {
+        margin-top: 5px;
+    }
+    .right-article, h4 {
+        margin-bottom: 10px;
+    }
+    h4 {
+        margin-top: 0px;
+    }
+    .point, .double-point, .lieu, .right-article {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    /*fonts & text*/
+    h4 {
+        font-size: 14px;
+    }
+    h1, h2 {
+        text-align: start;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h3, h2 {
+        font-size: 20px;
+    }
+    .title {
+        text-align: left;
+    }
+    .date, .lieu {
+        font-weight: normal;
+    }
+
+            /*colors*/
+    .photo {
+        background-color: #ed3a88;
+    }
+    .left-article {
+        color: #142B45;
+    }
+}
+
+   
+
