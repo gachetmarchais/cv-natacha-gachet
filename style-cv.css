@@ -11,16 +11,18 @@
 
 body {
     width: 100%;
-    margin: auto;
+    margin: auto;   
 }
 body > * {
     font-family: fonts/robotoregular;
-    text-align: justify;
-    
+    text-align: justify;    
 }
 #main {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse;   
+}
+*{
+    margin: 0;
 }
 
         /* Colors */
@@ -92,6 +94,7 @@ h2 {
 h3 {
     padding-top: 5px;
     padding-bottom: 5px;
+
 }
 aside, h4 {
     margin-top: 0px;
@@ -109,6 +112,9 @@ p {
 }
 .p-contact, .p-a_propos, #icon {
     padding-top: 20px;
+}
+.a_propos, .contact{
+    padding-bottom: 20px;
 }
 
         /*Head*/
