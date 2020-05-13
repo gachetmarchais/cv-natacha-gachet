@@ -30,7 +30,7 @@ body > * {
     color: #142B45;
 }
 h3, #first-name, .picto, .double-point, .point, .left-article {
-    color: #ed3a88;
+    color: blue;
 }
 .photo, .contact, .a_propos, .loisirs, #job:after {
     background-color: #ed3a88;     
