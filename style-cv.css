@@ -56,14 +56,17 @@ a {
 h3, h2 {
     font-size: 22px;
 }
-h2, h1, .date, .lieu, h4 {
-    font-family: acumin-pro, sans-serif;
+h2, h1, .date, .lieu, h4, h3 {
+    font-family: acumin-pro
 }
 h1, h3, h2, h4 {
     text-transform: uppercase;
 }
 #first-name {
     font-weight: bold;
+}
+#last-name{
+    font-weight:normal;
 }
 h2, h3, .title {
     text-align: center;
@@ -82,7 +85,7 @@ aside, #icon {
 
         /*borders*/
 .title {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 20px;
 }
 h1, h3, aside, h4 {
@@ -94,7 +97,6 @@ h2 {
 h3 {
     padding-top: 5px;
     padding-bottom: 5px;
-
 }
 aside, h4 {
     margin-top: 0px;
@@ -108,13 +110,17 @@ p {
     margin-bottom: 5px;
 }
 .block {
-    margin-top: 25px;
+    margin-top: 15px;
+    padding-bottom: 5px;
 }
-.p-contact, .p-a_propos, #icon {
+.p-contact, .p-a_propos, #icon, .aside-left, .aside-right {
     padding-top: 20px;
 }
-.a_propos, .contact{
+.a_propos, .contact, .recommandation{
     padding-bottom: 20px;
+}
+h2{
+    margin-top: 30px;
 }
 
         /*Head*/
@@ -123,8 +129,8 @@ p {
 }
 .photo {
     flex: 1 1 auto;
-    padding-top: 15px;
- 
+    padding-top: 25px;
+    padding-bottom: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -200,7 +206,7 @@ p {
 
 
 /* RESPONSIVE TABLETTE */
-@media (min-width: 455px) and (max-width: 870px) {
+@media (min-width: 455px)  {
     .block, .p-left-article, .p-left-article {
         display: flex;
     }
@@ -229,7 +235,13 @@ p {
     .lieu {
         padding-left: 0px;    
     }
-  
+    .date, .lieu {
+        font-weight: normal;
+    }
+
+    .date, .lieu, .bold, h4, .p-contact {
+        font-weight: 600;
+    }  
 }
 
 
@@ -241,6 +253,12 @@ p {
             /*flexbox & mise en page*/
     #main, .block, #left-box, .p-left-article {
         display: flex;
+    }
+    #right-box {
+        float: right;
+    }
+    .picto, #left-box {
+        float: left;
     }
     .p-left-article, #left-box {
         flex-direction: column;
@@ -259,12 +277,6 @@ p {
     }
     .loisirs {
         flex: 0.4 1 auto;
-    }
-    #right-box {
-        float: right;
-    }
-    .picto, #left-box {
-        float: left;
     }
 
             /*borders & width*/
@@ -318,24 +330,15 @@ p {
     }
 
 
-    /*fonts & text*/
+            /*fonts & text*/
     h4 {
         font-size: 14px;
     }
     h1, h2 {
         text-align: start;
     }
-    h1 {
-        font-size: 40px;
-    }
-    h3, h2 {
-        font-size: 20px;
-    }
     .title {
         text-align: left;
-    }
-    .date, .lieu {
-        font-weight: normal;
     }
 
             /*colors*/
