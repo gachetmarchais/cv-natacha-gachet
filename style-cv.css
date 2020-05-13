@@ -14,7 +14,7 @@ body {
     margin: auto;   
 }
 body > * {
-    font-family: fonts/robotoregular;
+    font-family: robotoregular;
     text-align: justify;    
 }
 #main {
@@ -32,7 +32,7 @@ body > * {
 h3, #first-name, .picto, .double-point, .point, .left-article {
     color: #ed3a88;
 }
-.photo, .contact, .a_propos, .loisirs, #job:after {
+.photo, .contact, .about, .spare-time, #job:after {
     background-color: #ed3a88;     
 }
 .photo {
@@ -47,7 +47,7 @@ a {
 }
 
 /* Fonts & Text */
-.date, .lieu, h4, #left-box, #right-box, .picto {
+.dated, .location, h4, #left-box, #right-box, .picto {
     font-size: 14px;
 }
 .fa-book, .fa-pagelines, h1 {
@@ -56,7 +56,7 @@ a {
 h3, h2 {
     font-size: 22px;
 }
-h2, h1, .date, .lieu, h4, h3 {
+h2, h1, .dated, .location, h4, h3 {
     font-family: acumin-pro
 }
 h1, h3, h2, h4 {
@@ -71,12 +71,15 @@ h1, h3, h2, h4 {
 h2, h3, .title {
     text-align: center;
 }
+.contact {
+    text-align:initial;
+}
 
         /*flexbox*/
-.left-article, aside, block, #header, #main, .photo, #icon {
+.left-article, footer, block, #header, #main, .photo, #icon {
     display: flex;
 }
-aside, #icon {
+footer, #icon {
     justify-content: space-around;
 }
 .block, #header {
@@ -85,10 +88,10 @@ aside, #icon {
 
         /*borders*/
 .title {
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
-h1, h3, aside, h4 {
+h1, h3, footer, h4 {
     margin-bottom: 0px;
 }
 h2 {
@@ -98,10 +101,10 @@ h3 {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-aside, h4 {
+footer, h4 {
     margin-top: 0px;
 }
-.point, .double-point, .lieu, .right-article, .p-contact, .p-a_propos {
+.point, .double-point, .location, .right-article, .p-contact, .p-about {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -110,41 +113,44 @@ p {
     margin-bottom: 5px;
 }
 .block {
-    margin-top: 15px;
-    padding-bottom: 5px;
+    margin-top: 30px;   
 }
-.p-contact, .p-a_propos, #icon, .aside-left, .aside-right {
+.footer-left, .footer-right, .p-about, .p-contact {
     padding-top: 20px;
 }
-.a_propos, .contact, .recommandation{
+.about, .contact, .recommendation{
     padding-bottom: 20px;
 }
 h2{
     margin-top: 30px;
 }
-
-        /*Head*/
+.p-contact p{
+    padding-bottom: 20px;
+}
+#icon {
+    padding-top: 20px;
+}
+/*Head*/
 #header, #main {
     width: 100%;
 }
 .photo {
     flex: 1 1 auto;
-    padding-top: 25px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
     justify-content: center;
     align-items: center;
 }
 .ngm {
     width: 133px;
     height: 133px;
-    border: none;
-    -moz-border-radius: 50%;
+    border: none;   
     -webkit-border-radius: 50%;
     border-radius: 50%;
     box-shadow: 0px 0px 10px #142B45;
 }
 
-        /*icon loisirs*/
+        /*icon spare-time*/
 .icon-left-box {
     border: 2px solid #142B45;
     -moz-border-radius: 50%;
@@ -231,16 +237,19 @@ h2{
     h3, h2 {
         font-size: 20px;
     }
-    .lieu {
+    .location {
         padding-left: 0px;    
     }
-    .date, .lieu {
+    .dated, .location {
         font-weight: normal;
     }
-
-    .date, .lieu, .bold, h4, .p-contact {
+    .dated, .location, .bold, h4, .p-contact {
         font-weight: 600;
-    }  
+    }
+    .title {
+        padding-top: 70px;
+        padding-bottom: 0px;
+    }
 }
 
 
@@ -269,12 +278,12 @@ h2{
         display: block;       
     }
     .contact {
-        flex: 2 1 auto;
+        flex: 0.6 1 auto;
     }
-    .a_propos {
+    .about {
         flex: 3 1 auto;
     }
-    .loisirs {
+    .spare-time {
         flex: 0.4 1 auto;
     }
 
@@ -288,10 +297,10 @@ h2{
     .left-article {
         width: 30%;
     }
-    .aside-left {
+    .footer-left {
         width: 40%;
     }
-    .aside-right {
+    .footer-right {
         width: 60%;
     }
     .right-article {
@@ -304,9 +313,10 @@ h2{
     #left-box {
         margin-right: 55px;        
     }
-    .p-contact, .p-a_propos {
+    .p-contact, .p-about {
         padding-left: 30px;
         padding-right: 30px;
+        padding-top: 40px;
     }
     .picto {
         margin-left: 10px;
@@ -323,13 +333,18 @@ h2{
     h4 {
         margin-top: 0px;
     }
-    .point, .double-point, .lieu, .right-article {
+    .point, .double-point, .location, .right-article {
         padding-left: 0px;
         padding-right: 0px;
     }
-
+    #icon {
+        padding-top: 30px;
+    }
 
             /*fonts & text*/
+    .dated, .location, h4, #left-box, #right-box {
+        font-size: 16px;
+    }
     h4 {
         font-size: 14px;
     }
