@@ -289,10 +289,10 @@ h2{
 
             /*borders & width*/
     .photo, #left-box {
-        width: 27%;
+        width: 30%;
     }
     .title, #right-box {
-        width: 63%;
+        width: 70%;
     }
     .left-article {
         width: 30%;
@@ -305,8 +305,7 @@ h2{
     }
     .footer-right {
         width: 60%;
-    }
- 
+    } 
     .title {
         padding-left: 55px;
         padding-bottom: 55px;
@@ -321,9 +320,14 @@ h2{
     }
     .picto {
         margin-left: 10px;
+        margin-bottom: 0px;
     }
     h2, .right-article {
         margin-right: 30px;
+    }
+    h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .double-point {
         margin-top: 5px;
@@ -347,14 +351,20 @@ h2{
         font-size: 16px;
     }
     h1 {
-        font-size: 40px;
+        font-size: 60px;
+    }
+    h2, h3 {
+        font-size: 30px;
     }
     h1, h2 {
         text-align: start;
     }
     .title {
         text-align: left;
-    }
+    }h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
             /*colors*/
     .photo {
