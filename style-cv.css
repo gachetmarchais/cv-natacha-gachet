@@ -289,13 +289,16 @@ h2{
 
             /*borders & width*/
     .photo, #left-box {
-        width: 25%;
+        width: 30%;
     }
     .title, #right-box {
-        width: 75%;
+        width: 70%;
     }
     .left-article {
         width: 30%;
+    }
+    .right-article {
+        width: 70%;
     }
     .footer-left {
         width: 40%;
@@ -303,9 +306,7 @@ h2{
     .footer-right {
         width: 60%;
     }
-    .right-article {
-        width: 70%;
-    }
+ 
     .title {
         padding-left: 55px;
         padding-bottom: 55px;
@@ -343,7 +344,7 @@ h2{
 
             /*fonts & text*/
     .dated, .location, h4, #left-box, #right-box {
-        font-size: 16px;
+        font-size: 30px;
     }
     h4 {
         font-size: 14px;
