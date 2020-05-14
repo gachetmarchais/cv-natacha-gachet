@@ -289,10 +289,10 @@ h2{
 
             /*borders & width*/
     .photo, #left-box {
-        width: 30%;
+        width: 35%;
     }
     .title, #right-box {
-        width: 70%;
+        width: 65%;
     }
     .left-article {
         width: 30%;
@@ -344,10 +344,7 @@ h2{
 
             /*fonts & text*/
     .dated, .location, h4, #left-box, #right-box {
-        font-size: 30px;
-    }
-    h4 {
-        font-size: 14px;
+        font-size: 16px;
     }
     h1, h2 {
         text-align: start;
