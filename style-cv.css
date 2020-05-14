@@ -41,7 +41,7 @@ h3, #first-name, .picto, .double-point, .point, .left-article {
 h3 {
     background-color: #142B45;
 }
-a {
+a, .bold {
     text-decoration: none;
     color: #142B45;
 }
@@ -289,10 +289,10 @@ h2{
 
             /*borders & width*/
     .photo, #left-box {
-        width: 30%;
+        width: 27%;
     }
     .title, #right-box {
-        width: 70%;
+        width: 63%;
     }
     .left-article {
         width: 30%;
@@ -345,6 +345,9 @@ h2{
             /*fonts & text*/
     .dated, .location, h4, #left-box, #right-box {
         font-size: 16px;
+    }
+    h1 {
+        font-size: 40px;
     }
     h1, h2 {
         text-align: start;
