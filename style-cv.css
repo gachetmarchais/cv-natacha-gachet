@@ -289,10 +289,10 @@ h2{
 
             /*borders & width*/
     .photo, #left-box {
-        width: 35%;
+        width: 30%;
     }
     .title, #right-box {
-        width: 65%;
+        width: 70%;
     }
     .left-article {
         width: 30%;
