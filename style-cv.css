@@ -123,6 +123,7 @@ p {
 }
 h2{
     margin-top: 30px;
+    margin-right: 20px;
 }
 .p-contact p{
     padding-bottom: 20px;
@@ -247,7 +248,7 @@ h2{
         font-weight: 600;
     }
     .title {
-        padding-top: 70px;
+        padding-top: 80px;
         padding-bottom: 0px;
     }
 }
@@ -289,10 +290,10 @@ h2{
 
             /*borders & width*/
     .photo, #left-box {
-        width: 30%;
+        width: 32%;
     }
     .title, #right-box {
-        width: 70%;
+        width: 68%;
     }
     .left-article {
         width: 30%;
@@ -320,7 +321,7 @@ h2{
     }
     .picto {
         margin-left: 10px;
-        margin-bottom: 0px;
+        padding-top: 5px;
     }
     .right-article {
         margin-right: 30px;
@@ -343,7 +344,10 @@ h2{
         padding-right: 0px;
     }
     #icon {
-        padding-top: 30px;
+        padding-top: 37px;
+    }
+    .recommendation {
+        margin-bottom: 20px;
     }
 
             /*fonts & text*/
@@ -357,7 +361,10 @@ h2{
         font-size: 30px;
     }
     h1, h2 {
-        text-align: start;
+        text-align:initial;
+    }
+    .picto{
+        font-size: 16px;
     }
     .title {
         text-align: left;
