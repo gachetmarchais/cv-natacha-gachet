@@ -41,7 +41,7 @@ h3, #first-name, .picto, .double-point, .point, .left-article {
 h3 {
     background-color: #142B45;
 }
-a, .bold {
+a, .bold p {
     text-decoration: none;
     color: #142B45;
 }
