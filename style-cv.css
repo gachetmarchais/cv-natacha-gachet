@@ -142,9 +142,9 @@ h2{
     justify-content: center;
     align-items: center;
 }
-.ngm {
-    width: 133px;
-    height: 133px;
+.bengal {
+    width: 200px;
+    height: 200px;
     border: none;   
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -247,11 +247,11 @@ h2{
     .dated, .location, .bold, h4, .p-contact {
         font-weight: 600;
     }
-    .title {
+    .title, .photo{
         padding-top: 80px;
         padding-bottom: 0px;
     }
-}
+
 
 
  /* DESKTOP */
@@ -309,7 +309,7 @@ h2{
     } 
     .title {
         padding-left: 55px;
-        padding-bottom: 55px;
+        margin-top: 80px;
     }
     #left-box {
         margin-right: 55px;        
@@ -349,6 +349,10 @@ h2{
     .recommendation {
         margin-bottom: 20px;
     }
+    .photo {
+        padding-bottom: 50px;
+    }
+
 
             /*fonts & text*/
     .dated, .location, h4, #left-box, #right-box {
@@ -368,14 +372,18 @@ h2{
     }
     .title {
         text-align: left;
-    }h3 {
+    }
+    h3 {
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
-            /*colors*/
+    }
+    .bengal {
+        width: 250px;
+        height: 250px;
+    }
+        /*colors*/
     .photo {
-        background-color: #ed3a88;
+    background-color: #ed3a88;
     }
     .left-article {
         color: #142B45;
