@@ -411,6 +411,9 @@ h2{
             width: 200px;
             height: 200px;
         }
+        #job:after {           
+            width: 80px;           
+        }
         /*colors*/
          .left-article {
             color: #142B45;
