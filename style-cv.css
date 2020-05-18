@@ -19,7 +19,7 @@ body > * {
 }
 #main {
     display: flex;
-    flex-direction: column-reverse;   
+    flex-direction: column;   
 }
 *{
     margin: 0;
@@ -35,9 +35,7 @@ h3, #first-name, .picto, .double-point, .point, .left-article {
 .photo, .contact, .about, .spare-time, #job:after {
     background-color: #ed3a88;     
 }
-.photo {
-    background-color: white;
-}
+
 h3 {
     background-color: #142B45;
 }
@@ -97,7 +95,7 @@ h1, h3, footer, h4 {
 h2 {
     border-bottom: 2px #ed3a88 solid;
 }
-h3 {
+h3, h2 {
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -112,8 +110,11 @@ p {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.block {
+.block, #header  {
     margin-top: 30px;   
+}
+#header {
+    margin-bottom: 50px;
 }
 .footer-left, .footer-right, .p-about, .p-contact {
     padding-top: 20px;
@@ -123,7 +124,6 @@ p {
 }
 h2{
     margin-top: 30px;
-    margin-right: 20px;
 }
 .p-contact p{
     padding-bottom: 20px;
@@ -146,7 +146,6 @@ h2{
     width: 200px;
     height: 200px;
     border: none;   
-    -webkit-border-radius: 50%;
     border-radius: 50%;
     box-shadow: 0px 0px 10px #142B45;
 }
@@ -154,8 +153,6 @@ h2{
         /*icon spare-time*/
 .icon-left-box {
     border: 2px solid #142B45;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
     border-radius: 50%;
 }
 .fa-book {
@@ -212,181 +209,212 @@ h2{
 }
 
 /* RESPONSIVE TABLETTE */
-@media (min-width: 455px)  {
+@media (min-width: 455px) {
     .block, .p-left-article, .p-left-article {
         display: flex;
     }
-    .block {        
+
+    .block {
         flex-direction: initial;
     }
+
     .p-left-article, .p-left-article {
         flex-direction: column;
     }
+
     .left-article {
         width: 30%;
     }
-    .right-article {      
-        width: 70%;      
-    }
-    h4 {
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }
-    h1 {
-        font-size: 40px;
-    }
-    h3, h2 {
-        font-size: 20px;
-    }
-    .location {
-        padding-left: 0px;    
-    }
-    .dated, .location {
-        font-weight: normal;
-    }
-    .dated, .location, .bold, h4, .p-contact {
-        font-weight: 600;
-    }
-    .title, .photo{
-        padding-top: 80px;
-        padding-bottom: 0px;
-    }
 
-
-
- /* DESKTOP */
-@media(min-width: 871px)  {
-    body >*{
-        max-width: 1900px;
-    }
-            /*flexbox & mise en page*/
-    #main, .block, #left-box, .p-left-article {
-        display: flex;
-    }
-    #right-box {
-        float: right;
-    }
-    .picto, #left-box {
-        float: left;
-    }
-    .p-left-article, #left-box {
-        flex-direction: column;
-    }
-    #main, #header, .block {
-        flex-direction: initial;
-    }
-    #right-box {       
-        display: block;       
-    }
-    .contact {
-        flex: 0.6 1 auto;
-    }
-    .about {
-        flex: 3 1 auto;
-    }
-    .spare-time {
-        flex: 0.4 1 auto;
-    }
-
-            /*borders & width*/
-    .photo, #left-box {
-        width: 32%;
-    }
-    .title, #right-box {
-        width: 68%;
-    }
-    .left-article {
-        width: 30%;
-    }
     .right-article {
         width: 70%;
     }
-    .footer-left {
-        width: 40%;
-    }
-    .footer-right {
-        width: 60%;
-    } 
-    .title {
-        padding-left: 55px;
-        margin-top: 80px;
-    }
-    #left-box {
-        margin-right: 55px;        
-    }
-    .p-contact, .p-about {
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 40px;
-    }
-    .picto {
-        margin-left: 10px;
-        padding-top: 5px;
-    }
-    .right-article {
-        margin-right: 30px;
-    }
-    h3 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .double-point {
-        margin-top: 5px;
-    }
-    .right-article, h4 {
-        margin-bottom: 10px;
-    }
+
     h4 {
         margin-top: 0px;
-    }
-    .point, .double-point, .location, .right-article {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    #icon {
-        padding-top: 37px;
-    }
-    .recommendation {
-        margin-bottom: 20px;
-    }
-    .photo {
-        padding-bottom: 50px;
+        margin-bottom: 10px;
     }
 
-
-            /*fonts & text*/
-    .dated, .location, h4, #left-box, #right-box {
-        font-size: 16px;
-    }
     h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
-    h2, h3 {
-        font-size: 30px;
+
+    h3, h2 {
+        font-size: 20px;
     }
-    h1, h2 {
-        text-align:initial;
+
+    .location {
+        padding-left: 0px;
     }
-    .picto{
-        font-size: 16px;
+
+    .dated, .location {
+        font-weight: normal;
     }
-    .title {
-        text-align: left;
+
+    .dated, .location, .bold, h4, .p-contact {
+        font-weight: 600;
     }
-    h3 {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    }
-    .bengal {
-        width: 250px;
-        height: 250px;
-    }
+
+  
+
+
+
+    /* DESKTOP */
+    @media(min-width: 871px) {
+        body > * {
+            max-width: 1900px;
+        }
+        /*flexbox & mise en page*/
+        #main, .block, #left-box, .p-left-article {
+            display: flex;
+        }
+
+        #right-box {
+            float: right;
+        }
+
+        .picto, #left-box {
+            float: left;
+        }
+
+        .p-left-article, #left-box {
+            flex-direction: column;
+        }
+
+        #main, #header, .block {
+            flex-direction: initial;
+        }
+
+        #right-box {
+            display: block;
+        }
+        /*.photo{
+            flex: 0.3 1 auto;
+        }*/
+        .contact {
+            flex: 0.6 1 auto;
+        }
+
+        .about {
+            flex: 3 1 auto;
+        }
+
+        .spare-time {
+            flex: 0.4 1 auto;
+        }
+
+        /*borders & width*/
+        #left-box {
+            width: 32%;
+        }
+
+        #right-box {
+            width: 68%;
+        }
+
+        .left-article {
+            width: 30%;
+        }
+
+        .right-article {
+            width: 70%;
+        }
+
+        .footer-left {
+            width: 40%;
+        }
+
+        .footer-right {
+            width: 60%;
+        }
+
+        .title {            
+            margin-top: 70px;
+            margin-bottom: 80px;
+        }
+
+        #left-box {
+            margin-right: 55px;
+        }
+
+        .p-contact, .p-about {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 40px;
+        }
+
+        .picto {
+            margin-left: 10px;
+            padding-top: 5px;
+        }
+
+        .right-article {
+            margin-right: 30px;
+        }      
+        .double-point {
+            margin-top: 5px;
+        }
+
+        .right-article, h4 {
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            margin-top: 0px;
+        }
+        h3 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .point, .double-point, .location, .right-article {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        #icon {
+            padding-top: 37px;
+        }
+
+        .recommendation {
+            margin-bottom: 20px;
+        }
+        .photo {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+            /*fonts & text*/
+        .dated, .location, h4, #left-box, #right-box {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h2, h3, #job {
+            font-size: 30px;
+        }
+
+        h1, h2 {
+            text-align: initial;
+        }
+
+        .picto {
+            font-size: 16px;
+        }
+
+        .title {
+            text-align: left;
+        }
+        .bengal {
+            width: 200px;
+            height: 200px;
+        }
         /*colors*/
-    .photo {
-    background-color: #ed3a88;
-    }
-    .left-article {
-        color: #142B45;
+         .left-article {
+            color: #142B45;
+        }
     }
 }
 
