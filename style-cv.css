@@ -392,10 +392,12 @@ h2{
             font-size: 60px;
         }
 
-        h2, h3, #job {
+        h2, h3 {
             font-size: 30px;
         }
-
+        #job {
+            font-size: 25px;
+        }
         h1, h2 {
             text-align: initial;
         }
